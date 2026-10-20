@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #00004e;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* 📱 Small devices (already default, so no media query needed) */
+
+
+/* 📏 Medium devices (600px and up) */
+@media (min-width: 600px) {
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    p {
+        column-count: 2;
+    }
+}
+
+
+/* 💻 Tablets (600px - 899px only) */
+@media (min-width: 600px) and (max-width: 899px) {
+    img {
+        display: none;
+    }
+}
+
+
+/* 🖥️ Large screens (900px and up) */
+@media (min-width: 900px) {
+    p {
+        column-count: 3;
+    }
+}
+
+
+/* 🔄 Orientation */
+@media (orientation: landscape) {
+    h1 {
+        font-size: 80px;
+    }
+}
+
+@media (orientation: portrait) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+
+/* 🖨️ Print styles */
+@media print {
+    body {
+        background: none;
+        color: black;
+    }
+
+    img {
+        display: none;
+    }
+}
