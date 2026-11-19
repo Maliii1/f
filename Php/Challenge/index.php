@@ -19,6 +19,7 @@ function getGrade($average) {
       elseif ($average >= 70) {
         return "C";
     }
+    
        elseif ($average >= 60) {
         return "D";
     }

@@ -15,6 +15,7 @@
 
 		$sqlQuery->bindParam(':name', $name);
 		$sqlQuery->bindParam(':surname', $surname);
+		
 		$sqlQuery->bindParam(':email', $email);
 
 		$sqlQuery->execute();
